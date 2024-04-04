@@ -1,0 +1,9 @@
+
+<h1>Tickets for <%= @event.name %></h1>
+<ul>
+  <% @tickets.each do |ticket| %>
+    <li>
+      Price: <%= ticket.price %>, Status: <%= ticket.status %>
+    </li>
+  <% end %>
+</ul>

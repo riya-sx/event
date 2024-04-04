@@ -1,0 +1,8 @@
+
+<nav class="navbar navbar-light" style="background-color: #ADD8E6;">
+  <a class="navbar-brand text-purple" href="#">Current User - <%= current_user.email %></a>
+  <%= link_to 'Events', showevents_path , class: "btn btn-primary text-purple" %>
+  <%= link_to "Create Event", new_event_path, class: "btn btn-primary text-purple" %>
+  <%= link_to 'Sign out', destroy_user_session_path, data: { turbo_method: :delete },class: "btn btn-primary text-purple" %>
+</nav>
+<div class="event-header"></div>

@@ -1,0 +1,11 @@
+<div class="container">
+  <%= link_to "Back to Homepage", root_path, class: "btn btn-secondary mb-4" %>
+  <h1>Events</h1>
+  <ul class="list-group">
+    <% @events.each do |event| %>
+      <li class="list-group-item">
+        <%= link_to event.name, event_path(event), class: "text-decoration-none text-dark fw-bold" %>
+      </li>
+    <% end %>
+  </ul>
+</div>
